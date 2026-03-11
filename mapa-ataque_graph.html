@@ -470,7 +470,7 @@ function readFile(file, cb) {
   reader.onload = function(e) {
     try {
       var wb = ext === 'csv'
-        ? XLSX.read(e.target.result, { type: 'string' })
+        ? XLSX.read(e.target.result, { type: 'string', FS: ';' })
         : XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
       var sh = wb.Sheets[wb.SheetNames[0]];
       var rows = XLSX.utils.sheet_to_json(sh, { defval: '' });
@@ -1031,7 +1031,7 @@ function autoLoadCSV() {
   fetch('Base Automacao Leodagan.csv?t='+Date.now())
     .then(function(r){if(!r.ok)throw new Error('CSV not found');return r.text();})
     .then(function(txt){
-      var wb=XLSX.read(txt,{type:'string'});
+      var wb=XLSX.read(txt,{type:'string',FS:';'});
       var sh=wb.Sheets[wb.SheetNames[0]];
       var rows=XLSX.utils.sheet_to_json(sh,{defval:''});
       if(!rows.length)throw new Error('Empty');
