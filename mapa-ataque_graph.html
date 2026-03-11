@@ -462,6 +462,24 @@ document.getElementById('btnGo').addEventListener('click', function() {
   });
 });
 
+// CSV PARSER (semicolon delimiter, BOM-safe)
+function parseCSVText(txt) {
+  txt = txt.replace(/^\ufeff/, '');
+  var lines = txt.split(/\r?\n/).filter(function(l){return l.trim().length > 0;});
+  if (lines.length < 2) return [];
+  var headers = lines[0].split(';').map(function(h){return h.trim();});
+  var rows = [];
+  for (var i = 1; i < lines.length; i++) {
+    var vals = lines[i].split(';');
+    var obj = {};
+    for (var j = 0; j < headers.length; j++) {
+      obj[headers[j]] = (vals[j] || '').trim();
+    }
+    rows.push(obj);
+  }
+  return rows;
+}
+
 // FILE
 function readFile(file, cb) {
   var ext = file.name.split('.').pop().toLowerCase();
@@ -469,11 +487,14 @@ function readFile(file, cb) {
   reader.onerror = function() { cb('Falha ao ler arquivo.', null); };
   reader.onload = function(e) {
     try {
-      var wb = ext === 'csv'
-        ? XLSX.read(e.target.result, { type: 'string', FS: ';' })
-        : XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
-      var sh = wb.Sheets[wb.SheetNames[0]];
-      var rows = XLSX.utils.sheet_to_json(sh, { defval: '' });
+      var rows;
+      if (ext === 'csv') {
+        rows = parseCSVText(e.target.result);
+      } else {
+        var wb = XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
+        var sh = wb.Sheets[wb.SheetNames[0]];
+        rows = XLSX.utils.sheet_to_json(sh, { defval: '' });
+      }
       if (!rows.length) { cb('Planilha vazia.', null); return; }
       cb(null, rows);
     } catch(ex) { cb(ex.message, null); }
@@ -1031,16 +1052,10 @@ function autoLoadCSV() {
   fetch('Base Automacao Leodagan.csv?t='+Date.now())
     .then(function(r){if(!r.ok)throw new Error('CSV not found');return r.text();})
     .then(function(txt){
-      var wb=XLSX.read(txt,{type:'string',FS:';'});
-      var sh=wb.Sheets[wb.SheetNames[0]];
-      var rows=XLSX.utils.sheet_to_json(sh,{defval:''});
+      var rows=parseCSVText(txt);
       if(!rows.length)throw new Error('Empty');
       var proc=processRows(rows);
-      DATA=proc; buildAM(DATA);
-      document.getElementById('empty').style.display='none';
-      document.getElementById('dash').style.display='block';
-      document.getElementById('xbtn').style.display='flex';
-      renderAll();
+      finishLoad(proc);
       btn.textContent='↑ Atualizar dados'; btn.disabled=false;
     })
     .catch(function(){
