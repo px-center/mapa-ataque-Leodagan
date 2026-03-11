@@ -1,23 +1,35 @@
 import pandas as pd
 from datetime import datetime
 import json
+import shutil
 
-# Ler o CSV
-csv_path = "Base Automacao Leodagan.csv"
-print(f"📖 Lendo {csv_path}...")
+# Caminho do CSV no OneDrive
+ORIGEM = r"C:\Users\GustavoAlvesdeSouza\OneDrive - PX Center\Área de Trabalho\10_Forecast\50_Projeções\30_Automação Salesforce\Base Automacao Leodagan.csv"
+DESTINO = r"C:\Users\GustavoAlvesdeSouza\Desktop\mapa-ataque-Leodagan\Base Automacao Leodagan.csv"
+
+print(f"📖 Lendo CSV do OneDrive...")
+print(f"Origem: {ORIGEM}\n")
 
 try:
-    df = pd.read_csv(csv_path, encoding='utf-8-sig', sep=';')
+    # Copiar arquivo
+    shutil.copy2(ORIGEM, DESTINO)
+    print(f"✅ CSV copiado para o repositório\n")
+except Exception as e:
+    print(f"⚠️  Aviso ao copiar: {e}\n")
+
+# Ler o CSV
+try:
+    df = pd.read_csv(ORIGEM, encoding='utf-8-sig', sep=';')
 except:
     try:
-        df = pd.read_csv(csv_path, encoding='latin-1', sep=';')
+        df = pd.read_csv(ORIGEM, encoding='latin-1', sep=';')
     except:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(ORIGEM)
 
 print(f"✅ {len(df)} linhas carregadas")
-print(f"📋 Colunas detectadas: {len(df.columns)}")
+print(f"📋 Colunas detectadas: {len(df.columns)}\n")
 
-# Processar dados simples
+# Processar dados
 clientes_lista = []
 for idx, row in df.iterrows():
     nome = str(row.iloc[10]) if len(row) > 10 else f'Cliente {idx}'
@@ -27,7 +39,7 @@ for idx, row in df.iterrows():
         'status': 'Ativo'
     })
 
-print(f"🔄 {len(clientes_lista)} clientes processados")
+print(f"🔄 {len(clientes_lista)} clientes processados\n")
 
 # Ler HTML
 html_path = "mapa-ataque_graph.html"
