@@ -4,124 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de Ataque - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #05080c;
+            --s1: #0a0f18;
+            --s2: #0f1621;
+            --b1: rgba(255,255,255,.06);
+            --b2: rgba(255,255,255,.1);
+            --t1: #f0f4ff;
+            --t2: #8fa3c0;
+            --t3: #4a6080;
+            --t4: #2a3a50;
+            --green: #00e87a;
+            --blue: #3b82f6;
+            --purple: #a855f7;
+            --orange: #f97316;
+            --amber: #f59e0b;
+            --red: #ef4444;
+            --cyan: #06b6d4;
+            --r: 16px;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: var(--t1);
         }
         .login-container {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            background: var(--s1);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: var(--r);
             padding: 40px;
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
+            position: relative;
+            overflow: hidden;
         }
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 24px;
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--green), var(--blue) 55%, var(--purple));
+        }
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 6px;
+        }
+        .logo {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+        }
+        .brand-text h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 3px;
+            color: var(--t1);
+            line-height: 1;
+        }
+        .brand-text .brandsub {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.5rem;
+            color: var(--t3);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 2px;
         }
         .subtitle {
             text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 14px;
+            color: var(--t3);
+            margin-bottom: 28px;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
         }
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
         label {
             display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: 500;
+            margin-bottom: 7px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--t2);
         }
         input {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: border-color 0.3s;
+            padding: 11px 14px;
+            background: var(--s2);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-family: 'Outfit', sans-serif;
+            color: var(--t1);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        input::placeholder {
+            color: var(--t4);
         }
         input:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
         }
-        button {
+        .btn-submit {
             width: 100%;
             padding: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 600;
+            background: rgba(0, 232, 122, 0.1);
+            border: 1px solid rgba(0, 232, 122, 0.4);
+            border-radius: 8px;
+            font-size: 0.78rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: var(--green);
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.2s;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-top: 4px;
         }
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        .btn-submit:hover {
+            background: rgba(0, 232, 122, 0.2);
+            box-shadow: 0 4px 20px rgba(0, 232, 122, 0.15);
         }
-        button:active {
-            transform: translateY(0);
+        .btn-submit:active {
+            transform: scale(0.98);
         }
         .error {
-            color: #dc3545;
-            font-size: 14px;
-            margin-top: 10px;
+            color: var(--red);
+            font-size: 0.75rem;
+            margin-top: 12px;
             text-align: center;
+            font-weight: 600;
         }
         .info {
-            background: #f0f4ff;
-            border-left: 4px solid #667eea;
-            padding: 12px;
-            margin-top: 20px;
-            border-radius: 4px;
-            font-size: 12px;
-            color: #333;
+            background: rgba(59, 130, 246, 0.06);
+            border-left: 3px solid var(--blue);
+            padding: 10px 14px;
+            margin-top: 22px;
+            border-radius: 6px;
+            font-size: 0.68rem;
+            color: var(--t2);
         }
         .footer-links {
             margin-top: 20px;
             text-align: center;
-            font-size: 13px;
+            font-size: 0.7rem;
         }
         .footer-links a {
-            color: #667eea;
+            color: var(--t3);
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.2s;
         }
         .footer-links a:hover {
-            text-decoration: underline;
-        }
-        .footer-links .separator {
-            color: #ccc;
-            margin: 0 8px;
+            color: var(--blue);
         }
         .request-access {
             display: none;
-            background: #fff3e0;
-            border-left: 4px solid #f97316;
-            padding: 12px;
-            margin-top: 15px;
-            border-radius: 4px;
-            font-size: 13px;
-            color: #333;
+            background: rgba(249, 115, 22, 0.08);
+            border-left: 3px solid var(--orange);
+            padding: 10px 14px;
+            margin-top: 14px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            color: var(--t2);
             text-align: center;
             animation: fadeIn 0.3s ease;
         }
         .request-access a {
-            color: #f97316;
-            font-weight: 600;
+            color: var(--orange);
+            font-weight: 700;
             text-decoration: none;
         }
         .request-access a:hover {
@@ -135,12 +203,38 @@
 </head>
 <body>
     <div class="login-container">
-        <h1>Mapa de Ataque</h1>
-        <p class="subtitle">Rota do Sucesso - Leodagan</p>
+        <div class="brand-header">
+            <svg class="logo" viewBox="0 0 36 36" fill="none">
+                <defs>
+                    <linearGradient id="lg" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#00e87a"/>
+                        <stop offset="100%" stop-color="#3b82f6"/>
+                    </linearGradient>
+                </defs>
+                <path d="M18 1L33 9.5V26.5L18 35L3 26.5V9.5Z" fill="rgba(4,8,18,.9)" stroke="url(#lg)" stroke-width="1.2"/>
+                <line x1="9" y1="13" x2="27" y2="13" stroke="#00e87a" stroke-width="0.4" stroke-opacity="0.3"/>
+                <line x1="9" y1="18" x2="27" y2="18" stroke="#06b6d4" stroke-width="0.3" stroke-opacity="0.2"/>
+                <line x1="9" y1="23" x2="27" y2="23" stroke="#00e87a" stroke-width="0.4" stroke-opacity="0.3"/>
+                <line x1="13" y1="10" x2="13" y2="27" stroke="#06b6d4" stroke-width="0.3" stroke-opacity="0.15"/>
+                <line x1="18" y1="10" x2="18" y2="27" stroke="#06b6d4" stroke-width="0.3" stroke-opacity="0.15"/>
+                <line x1="23" y1="10" x2="23" y2="27" stroke="#06b6d4" stroke-width="0.3" stroke-opacity="0.15"/>
+                <path d="M10 24 L14 20 L18 22 L23 15" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.5 1.5"/>
+                <circle cx="10" cy="24" r="1.5" fill="#f59e0b"/>
+                <circle cx="14" cy="20" r="1.2" fill="#3b82f6"/>
+                <circle cx="18" cy="22" r="1.2" fill="#3b82f6"/>
+                <circle cx="23" cy="15" r="1.8" fill="none" stroke="#06b6d4" stroke-width="0.8"/>
+                <circle cx="23" cy="15" r="0.7" fill="#06b6d4"/>
+            </svg>
+            <div class="brand-text">
+                <h1>MAPA DE ATAQUE</h1>
+                <div class="brandsub">Rota do Sucesso &middot; Leodagan</div>
+            </div>
+        </div>
+        <p class="subtitle">Acesso ao Dashboard</p>
 
         <form id="loginForm">
             <div class="form-group">
-                <label for="email">E-mail:</label>
+                <label for="email">E-mail</label>
                 <input
                     type="email"
                     id="email"
@@ -150,7 +244,7 @@
                 >
             </div>
             <div class="form-group">
-                <label for="password">Senha:</label>
+                <label for="password">Senha</label>
                 <input
                     type="password"
                     id="password"
@@ -159,7 +253,7 @@
                     required
                 >
             </div>
-            <button type="submit">Acessar Dashboard</button>
+            <button type="submit" class="btn-submit">Acessar Dashboard</button>
             <div id="error" class="error"></div>
         </form>
 
@@ -194,10 +288,13 @@
 
             const emailInput = document.getElementById('email').value.trim().toLowerCase();
             const senhaInput = document.getElementById('password').value;
+            const requestBox = document.getElementById('requestAccess');
+
+            requestBox.style.display = 'none';
+            document.getElementById('error').textContent = '';
 
             if (!allowedEmails.includes(emailInput)) {
                 document.getElementById('error').textContent = 'E-mail nao autorizado!';
-                const requestBox = document.getElementById('requestAccess');
                 requestBox.style.display = 'block';
                 const subject = encodeURIComponent('Solicitar Acesso - Mapa de Ataque Leodagan');
                 const body = encodeURIComponent('Ola Gustavo,\n\nGostaria de solicitar acesso ao Mapa de Ataque Leodagan.\n\nMeu e-mail: ' + emailInput + '\n\nObrigado!');
