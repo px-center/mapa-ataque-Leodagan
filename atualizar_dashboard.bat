@@ -2,8 +2,8 @@
 REM Script de automacao - Atualizar dashboard Leodagan
 
 REM Definir caminhos
-set ORIGEM=C:\Users\GustavoAlvesdeSouza\OneDrive - PX Center\Área de Trabalho\10_Forecast\50_Projeções\30_Automação Salesforce\Base Automacao Leodagan.csv
-set DESTINO=C:\Users\GustavoAlvesdeSouza\Desktop\mapa-ataque-Leodagan\Base Automacao Leodagan.csv
+set ORIGEM="C:\Users\GustavoAlvesdeSouza\OneDrive - PX Center\Área de Trabalho\10_Forecast\50_Projeções\30_Automação Salesforce\Base Automacao Leodagan.csv"
+set DESTINO="C:\Users\GustavoAlvesdeSouza\Desktop\mapa-ataque-Leodagan\Base Automacao Leodagan.csv"
 set PASTA_REPO=C:\Users\GustavoAlvesdeSouza\Desktop\mapa-ataque-Leodagan
 
 REM Copiar CSV
