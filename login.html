@@ -90,6 +90,47 @@
             font-size: 12px;
             color: #333;
         }
+        .footer-links {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-links .separator {
+            color: #ccc;
+            margin: 0 8px;
+        }
+        .request-access {
+            display: none;
+            background: #fff3e0;
+            border-left: 4px solid #f97316;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #333;
+            text-align: center;
+            animation: fadeIn 0.3s ease;
+        }
+        .request-access a {
+            color: #f97316;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .request-access a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
@@ -122,8 +163,16 @@
             <div id="error" class="error"></div>
         </form>
 
+        <div id="requestAccess" class="request-access">
+            E-mail nao cadastrado. <a id="requestLink" href="#">Solicitar acesso</a>
+        </div>
+
         <div class="info">
             Acesso restrito aos membros da equipe Leodagan.
+        </div>
+
+        <div class="footer-links">
+            <a href="mailto:gustavo.souza@px.center?subject=Suporte%20-%20Mapa%20de%20Ataque%20Leodagan">Contato com Suporte</a>
         </div>
     </div>
 
@@ -148,6 +197,11 @@
 
             if (!allowedEmails.includes(emailInput)) {
                 document.getElementById('error').textContent = 'E-mail nao autorizado!';
+                const requestBox = document.getElementById('requestAccess');
+                requestBox.style.display = 'block';
+                const subject = encodeURIComponent('Solicitar Acesso - Mapa de Ataque Leodagan');
+                const body = encodeURIComponent('Ola Gustavo,\n\nGostaria de solicitar acesso ao Mapa de Ataque Leodagan.\n\nMeu e-mail: ' + emailInput + '\n\nObrigado!');
+                document.getElementById('requestLink').href = 'mailto:gustavo.souza@px.center?subject=' + subject + '&body=' + body;
                 document.getElementById('email').focus();
                 return;
             }
