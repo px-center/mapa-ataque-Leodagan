@@ -101,7 +101,7 @@
 08/12/2025;Tier 2;RS-000869;Embarque;Inativo;Leonardo Ansolin Landt;7.0;;7.0;130;CEREALISTA LUDVIG LTDA;;;
 05/03/2026;Tier 5;RS-001016;Rota Guiada;Ativo;Leonardo Ansolin Landt;;5.0;5.0;100;Cidex Logistica ltda;;;
 05/03/2026;Tier 5;RS-001016;Rota Guiada;Ativo;Leonardo Ansolin Landt;;5.0;5.0;100;Cidex Logistica ltda;;;
-05/03/2026;Tier 5;RS-001016;Rota Guiada;Ativo;Leonardo Ansolin Landt;;5.0;5.0;100;Cidex Logistica ltda;;;
+05/03/2026;Tier 5;RS-001016;Rota Guiada;Ativo;Leonardo Ansolin Landt;;4.0;4.0;100;Cidex Logistica ltda;;;
 18/02/2025;Tier 8;RS-000391;Rota Guiada;Churn;Lays Cunha;1.0;;1.0;5;comercial eduar;;;
 18/02/2025;Tier 8;RS-000391;Rota Guiada;Churn;Lays Cunha;1.0;;1.0;5;comercial eduar;;;
 13/11/2025;Tier 6;RS-000826;Autonomia;Ativo;Leonardo Ansolin Landt;28.0;;28.0;60;COMERCIO E TRANSPORTES DIB;;;
@@ -115,8 +115,9 @@
 25/09/2024;Tier 8;RS-000034;Autonomia;Churn;José Bento;3.0;;3.0;30;CRG Transportes;;;
 25/09/2024;Tier 8;RS-000034;Autonomia;Churn;José Bento;;1.0;1.0;30;CRG Transportes;;;
 25/09/2024;Tier 8;RS-000034;Autonomia;Churn;José Bento;7.0;;7.0;30;CRG Transportes;;;
-06/03/2026;Tier 7;RS-001020;Piloto;Ativo;José Bento;;;1.0;45;Dajex Transportes;;;
-06/03/2026;Tier 7;RS-001020;Piloto;Ativo;José Bento;;1.0;1.0;45;Dajex Transportes;;;
+06/03/2026;Tier 7;RS-001020;Rota Guiada;Ativo;José Bento;;;1.0;45;Dajex Transportes;;;
+06/03/2026;Tier 7;RS-001020;Rota Guiada;Ativo;José Bento;;1.0;1.0;45;Dajex Transportes;;;
+06/03/2026;Tier 7;RS-001020;Rota Guiada;Ativo;José Bento;;1.0;1.0;45;Dajex Transportes;;;
 15/12/2025;Tier 5;RS-000886;Embarque;Inativo;Leonardo Ansolin Landt;;;;100;Dcan Transportes;;;
 23/09/2024;Tier 3;RS-000020;Autonomia;Churn;Leonardo Ansolin Landt;15.0;;15.0;120;Dellmar Transportes LTDA;;;
 23/09/2024;Tier 3;RS-000020;Autonomia;Churn;Leonardo Ansolin Landt;15.0;;15.0;120;Dellmar Transportes LTDA;;;
@@ -211,6 +212,7 @@
 27/05/2025;Tier 6;RS-000565;Rota Guiada;Inativo;Lays Cunha;2.0;;2.0;20;GIGANTE EQUIPAMENTOS E TRANSPORTES LTDA;;;
 10/12/2024;Tier 6;RS-000276;Piloto;Inativo;José Bento;;;;60;GIRO TRANSPORTES LTDA;;;
 29/07/2025;Tier 7;RS-000654;Embarque;Inativo;José Bento;;;;45;Godi Transportes;;;
+12/03/2026;Tier 8;RS-001035;Início;;Leonardo Ansolin Landt;;;;30;Granja RG Agronegócio LTDA;;;
 20/02/2026;Tier 2;RS-000995;Embarque;Inativo;José Bento;;;;130;Grupo Penta LTDA;;;
 01/12/2025;Tier 6;RS-000859;Piloto;Inativo;Leonardo Ansolin Landt;10.0;;10.0;60;Grupo Recicla;;;
 22/01/2026;Tier 7;RS-000942;Embarque;Inativo;Lays Cunha;;;;45;Helena Transportes Ltda;;;
@@ -232,7 +234,7 @@
 20/08/2025;Tier 7;RS-000683;Rota Guiada;Ativo;Leonardo Ansolin Landt;1.0;;1.0;45;JMA TRANSPORTES LTDA;;;
 20/08/2025;Tier 7;RS-000683;Rota Guiada;Ativo;Leonardo Ansolin Landt;2.0;;2.0;45;JMA TRANSPORTES LTDA;;;
 20/08/2025;Tier 7;RS-000683;Rota Guiada;Ativo;Leonardo Ansolin Landt;2.0;;2.0;45;JMA TRANSPORTES LTDA;;;
-20/08/2025;Tier 7;RS-000683;Rota Guiada;Ativo;Leonardo Ansolin Landt;;1.0;1.0;45;JMA TRANSPORTES LTDA;;;
+20/08/2025;Tier 7;RS-000683;Rota Guiada;Ativo;Leonardo Ansolin Landt;;2.0;2.0;45;JMA TRANSPORTES LTDA;;;
 21/01/2026;Tier 6;RS-000941;Piloto;Ativo;Lays Cunha;3.0;;3.0;60;JTC Distribuidora Ltda;;;
 05/08/2025;Tier 5;RS-000663;Embarque;Inativo;José Bento;;;;100;KAIROS LOG TRANSPORTES LTDA;;;
 16/12/2024;Tier 8;RS-000292;Rota Guiada;Churn;Leonardo Ansolin Landt;3.0;;3.0;30;kings Transportes;;;
@@ -341,9 +343,10 @@
 25/02/2025;Tier 7;RS-000405;Rota Guiada;Churn;Lays Cunha;2.0;;2.0;10;Pedreira Outeiro;;;
 27/02/2025;Tier 8;RS-000408;Embarque;Churn;Lays Cunha;;;;5;Pethrus Transporte de Água Potavel;;;
 09/10/2024;Tier 6;RS-000086;Piloto;Churn;Leonardo Ansolin Landt;8.0;;8.0;60;Pety Transportes Ltda;;;
-23/02/2026;Tier 8;RS-000996;Rota Guiada;Ativo;José Bento;;1.0;1.0;30;Pikolin Colchões do Brasil;;;
+23/02/2026;Tier 8;RS-000996;Rota Guiada;Ativo;José Bento;1.0;;1.0;30;Pikolin Colchões do Brasil;;;
 23/02/2026;Tier 8;RS-000996;Rota Guiada;Ativo;José Bento;1.0;;1.0;30;Pikolin Colchões do Brasil;;;
 23/02/2026;Tier 8;RS-000996;Rota Guiada;Ativo;José Bento;;1.0;1.0;30;Pikolin Colchões do Brasil;;;
+11/03/2026;Tier 7;RS-001024;Embarque;Ativo;José Bento;;;1.0;45;Pirâmides Distribuidora;;;
 30/10/2024;Tier 7;RS-000186;Rota Guiada;Churn;José Bento;4.0;;4.0;45;Popov Transportes LTDA;;;
 30/10/2024;Tier 7;RS-000186;Rota Guiada;Churn;José Bento;4.0;;4.0;45;Popov Transportes LTDA;;;
 30/10/2024;Tier 7;RS-000186;Rota Guiada;Churn;José Bento;1.0;;1.0;45;Popov Transportes LTDA;;;
@@ -380,7 +383,7 @@
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;1.0;1.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
@@ -460,16 +463,16 @@
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;1.0;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;1.0;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;1.0;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;1.0;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;1.0;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;1.0;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;;2.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;;2.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;1.0;;1.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;2.0;2.0;120;Risso Encomendas;;;
 27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;;1.0;120;Risso Encomendas;;;
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;;2.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;2.0;2.0;120;Risso Encomendas;;;
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;;1.0;120;Risso Encomendas;;;
 13/10/2025;Tier 3;RS-000770;Rota Guiada;Ativo;Leonardo Ansolin Landt;1.0;;1.0;120;RN Logística;;;
 13/10/2025;Tier 3;RS-000770;Rota Guiada;Ativo;Leonardo Ansolin Landt;1.0;;1.0;120;RN Logística;;;
 13/10/2025;Tier 3;RS-000770;Rota Guiada;Ativo;Leonardo Ansolin Landt;1.0;;1.0;120;RN Logística;;;
@@ -485,7 +488,7 @@
 29/01/2026;Tier 3;RS-000953;Autonomia;Ativo;José Bento;2.0;;2.0;120;Rodojunior;;;
 29/01/2026;Tier 3;RS-000953;Autonomia;Ativo;José Bento;10.0;;10.0;120;Rodojunior;;;
 29/11/2024;Tier 7;RS-000253;Embarque;Churn;José Bento;;;;45;RODOMAM TRANSPORTES LTDA;;;
-12/03/2026;Tier 1;RS-001028;Início;;José Bento;;;;150;RODONAVES LOCADORA;;;
+12/03/2026;Tier 1;RS-001028;Início;Inativo;José Bento;;;;150;RODONAVES LOCADORA;;;
 19/12/2025;Tier 8;RS-000904;Início;Inativo;Leonardo Ansolin Landt;;;;30;RODOPRIME TRANSPORTE E LOGISTICA LTDA;;;
 21/01/2025;Tier 8;RS-000344;Rota Guiada;Ativo;Leonardo Ansolin Landt;1.0;;1.0;30;RODOVALE TRANSPORTES E MUDANÇAS;;;
 21/01/2025;Tier 8;RS-000344;Rota Guiada;Ativo;Leonardo Ansolin Landt;1.0;;1.0;30;RODOVALE TRANSPORTES E MUDANÇAS;;;
@@ -602,10 +605,14 @@
 13/02/2026;Tier 8;RS-000982;Autonomia;Ativo;Lays Cunha;1.0;;1.0;30;Transmidi Transportes;;;
 13/02/2026;Tier 8;RS-000982;Autonomia;Ativo;Lays Cunha;1.0;;1.0;30;Transmidi Transportes;;;
 13/02/2026;Tier 8;RS-000982;Autonomia;Ativo;Lays Cunha;1.0;;1.0;30;Transmidi Transportes;;;
+13/02/2026;Tier 8;RS-000982;Autonomia;Ativo;Lays Cunha;;1.0;1.0;30;Transmidi Transportes;;;
+13/02/2026;Tier 8;RS-000982;Autonomia;Ativo;Lays Cunha;;1.0;1.0;30;Transmidi Transportes;;;
+13/02/2026;Tier 8;RS-000982;Autonomia;Ativo;Lays Cunha;;1.0;1.0;30;Transmidi Transportes;;;
+13/02/2026;Tier 8;RS-000982;Autonomia;Ativo;Lays Cunha;;1.0;1.0;30;Transmidi Transportes;;;
 13/01/2026;Tier 7;RS-000923;Piloto;Ativo;Lays Cunha;18.0;;18.0;45;TRANSMILK;;;
 19/11/2024;Tier 5;RS-000227;Embarque;Churn;Leonardo Ansolin Landt;;;;100;Trans Natalino;;;
-19/12/2025;Tier 5;RS-000905;Embarque;Ativo;José Bento;;;3.0;100;Transorte Partipações Ltda;;;
-19/12/2025;Tier 5;RS-000905;Embarque;Ativo;José Bento;;;3.0;100;Transorte Partipações Ltda;;;
+19/12/2025;Tier 5;RS-000905;Piloto;Ativo;José Bento;;3.0;3.0;100;Transorte Partipações Ltda;;;
+19/12/2025;Tier 5;RS-000905;Piloto;Ativo;José Bento;;;2.0;100;Transorte Partipações Ltda;;;
 20/10/2025;Tier 5;RS-000782;Piloto;Inativo;Leonardo Ansolin Landt;2.0;;2.0;100;Transpajos Transportes;;;
 06/02/2025;Tier 7;RS-000366;Piloto;Inativo;José Bento;1.0;;1.0;45;Transpoglass Transportes Rodoviarios LTDA;;;
 26/02/2026;Tier 2;RS-001004;Rota Guiada;Ativo;Leonardo Ansolin Landt;3.0;;3.0;130;Transportadora Ajofer Ltda;;;
@@ -724,7 +731,7 @@
 06/02/2025;Tier 7;RS-000366;Piloto;Inativo;José Bento;;;;;Transpoglass Transportes Rodoviarios LTDA;26638;02/10/2025;Gabriel Kegel
 21/02/2025;Tier 3;RS-000399;Rota Guiada;Inativo;José Bento;;;;;ARGET LOGISTICA E TRANSPORTES LTDA (GTI);200250;10/10/2025;Gabriel Kegel
 13/10/2025;Tier 6;RS-000772;Embarque;Inativo;Lua Gomes;;;;;CESARIO BERTO TRANSPORTES;400000;22/12/2025;Gabriel Kegel
-04/02/2026;Tier 7;RS-000962;Autonomia;Ativo;Lua Gomes;;;;;Futura Express Servicos de Entrega e Coleta;181878;24/02/2026;Gabriel Kegel
+04/02/2026;Tier 7;RS-000962;Autonomia;Ativo;Lua Gomes;;;;;Futura Express Servicos de Entrega e Coleta;85758;24/02/2026;Gabriel Kegel
 21/08/2025;Tier 7;RS-000685;Embarque;Inativo;Lua Gomes;;;;;transaureo transportes;400000;18/12/2025;Gabriel Kegel
 30/01/2026;Tier 6;RS-000957;Início;Ativo;Lua Gomes;;;;;Doces Vaz;0;16/02/2026;Gabriel Kegel
 03/12/2025;Tier 5;RS-000863;Rota Guiada;Ativo;José Bento;;;;;MCK TRANSPORTADORA E COMERCIO LTDA;148;14/01/2026;Gabriel Kegel
@@ -734,7 +741,7 @@
 16/05/2025;Tier 7;RS-000542;Embarque;Inativo;José Bento;;;;;ALICON DO BRASIL TRANSPORTE E LOGISTICA LTDA;300000;10/12/2025;Gabriel Kegel
 19/12/2024;Tier 7;RS-000301;Rota Guiada;Churn;José Bento;;;;;Rota Brasil Transportes e Logistica Ltda;9892;18/02/2026;Gabriel Kegel
 17/06/2025;Tier 5;RS-000591;Piloto;Inativo;José Bento;;;;;Rapidão Bahia;16485;23/10/2025;Gabriel Kegel
-12/02/2026;Tier 7;RS-000976;Autonomia;Ativo;Lua Gomes;;;;;F Pinheiro;10686;18/02/2026;Gabriel Kegel
+12/02/2026;Tier 7;RS-000976;Autonomia;Ativo;Lua Gomes;;;;;F Pinheiro;24037;18/02/2026;Gabriel Kegel
 26/02/2026;Tier 8;RS-001006;Piloto;Ativo;José Bento;;;;;Coruscant Ltda;161692;27/02/2026;Gabriel Kegel
 28/11/2025;Tier 6;RS-000856;Embarque;Inativo;José Bento;;;;;RR TRANSPORTE E LOGISTICA LTDA;400000;;Gabriel Kegel
 10/02/2025;Tier 6;RS-000371;Início;Churn;Lua Gomes;;;;;MARSON TRANSPORTES;1000000;06/11/2025;Gabriel Kegel
@@ -743,7 +750,7 @@
 05/09/2025;Tier 6;RS-000721;Embarque;Inativo;Lua Gomes;;;;;TGA Tech;400000;13/11/2025;Gabriel Kegel
 09/05/2025;Tier 7;RS-000521;Rota Guiada;Inativo;Lua Gomes;;;;;Kinglog logística;115990;06/11/2025;Gabriel Kegel
 20/12/2024;Tier 5;RS-000303;Rota Guiada;Ativo;José Bento;;;;;Ala Cargo;85849;10/02/2026;Gabriel Kegel
-12/03/2026;Tier 1;RS-001028;Início;;José Bento;;;;;RODONAVES LOCADORA;300000;12/03/2026;Gabriel Kegel
+12/03/2026;Tier 1;RS-001028;Início;Inativo;José Bento;;;;;RODONAVES LOCADORA;600000;12/03/2026;Gabriel Kegel
 24/10/2025;Tier 6;RS-000790;Autonomia;Ativo;José Bento;;;;;BENINI E CIA;283842;18/02/2026;Gabriel Kegel
 04/09/2025;Tier 1;RS-000718;Rota Guiada;Inativo;Lua Gomes;;;;;Zero Carbon Logistics S.A.;13830;16/02/2026;Gabriel Kegel
 28/05/2025;Tier 7;RS-000566;Embarque;Inativo;José Bento;;;;;Lvz Transportes e Logistica LTDA;400000;11/12/2025;Gabriel Kegel
@@ -759,7 +766,7 @@
 11/03/2025;Tier 2;RS-000420;Embarque;Churn;Lua Gomes;;;;;GLOBAL LOGISTICA RODOPRIMA;200000;08/12/2025;Gabriel Kegel
 11/03/2025;Tier 7;RS-000423;Rota Guiada;Inativo;José Bento;;;;;TRANSPORTES TEIXEIRA VARAJAO;116565;09/10/2025;Gabriel Kegel
 25/11/2024;Tier 7;RS-000237;Autonomia;Churn;Lua Gomes;;;;;ZAFFTRANS;46245;26/09/2025;Gabriel Kegel
-05/02/2026;Tier 8;RS-000964;Autonomia;Ativo;Lua Gomes;;;;;Comercial MT de produtos alimentícios;3104;18/02/2026;Gabriel Kegel
+05/02/2026;Tier 8;RS-000964;Autonomia;Ativo;Lua Gomes;;;;;Comercial MT de produtos alimentícios;71064;18/02/2026;Gabriel Kegel
 29/11/2024;Tier 2;RS-000255;Piloto;Churn;Lua Gomes;;;;;Transportadora Garbuio;49563;26/09/2025;Gabriel Kegel
 11/04/2025;Tier 7;RS-000483;Piloto;Inativo;Lua Gomes;;;;;LG LOG;162874;09/02/2026;Gabriel Kegel
 26/01/2026;Tier 4;RS-000946;Embarque;Inativo;Lua Gomes;;;;;DIESELCOM TRANSP. E REV. DE DIESEL COMBUSTIVEL LTDA;400000;13/02/2026;Gabriel Kegel
@@ -776,19 +783,20 @@
 13/12/2024;Tier 6;RS-000290;Rota Guiada;Inativo;Lua Gomes;;;;;Rodomini Transportes;0;04/11/2025;Gabriel Kegel
 17/12/2025;Tier 8;RS-000895;Embarque;Inativo;Lua Gomes;;;;;Aro Transportes;400000;28/01/2026;Gabriel Kegel
 02/04/2025;Tier 8;RS-000470;Rota Guiada;Inativo;José Bento;;;;;RFA TRANSPORTE E LOGÍSTICA;0;09/12/2025;Gabriel Kegel
-19/12/2025;Tier 5;RS-000905;Embarque;Ativo;José Bento;;;;;Transorte Partipações Ltda;279850;09/02/2026;Gabriel Kegel
+19/12/2025;Tier 5;RS-000905;Piloto;Ativo;José Bento;;;;;Transorte Partipações Ltda;299875;09/02/2026;Gabriel Kegel
 21/10/2025;Tier 8;RS-000783;Piloto;Inativo;José Bento;;;;;J&S Transportes ABC ltda;360;15/01/2026;Gabriel Kegel
 10/04/2025;Tier 6;RS-000479;Rota Guiada;Inativo;Lua Gomes;;;;;ON TIME SOLUÇÕES EM LOGISTICA LTDA;77591;16/12/2025;Gabriel Kegel
 10/03/2025;Tier 5;RS-000417;Autonomia;Inativo;José Bento;;;;;TRBSUL transportes;50228;10/12/2025;Gabriel Kegel
 28/11/2024;Tier 3;RS-000250;Rota Guiada;Inativo;Lua Gomes;;;;;Cootravale;30404;17/02/2026;Gabriel Kegel
 05/01/2026;Tier 8;RS-000916;Piloto;Ativo;Lua Gomes;;;;;Tiger Log transportes;1753;05/01/2026;Gabriel Kegel
+12/03/2026;Tier 5;RS-001036;Início;;Lua Gomes;;;;;Apt logística armazenagem e transporte ltda;231840;13/03/2026;Gabriel Kegel
 24/04/2025;Tier 8;RS-000503;Piloto;Inativo;Lua Gomes;;;;;BRAVOX TRANSPORTES;119480;09/10/2025;Gabriel Kegel
 24/02/2026;Tier 5;RS-000997;Embarque;Inativo;Lua Gomes;;;;;Transcontinetal Logística;400000;25/02/2026;Gabriel Kegel
 24/02/2025;Tier 7;RS-000403;Início;Churn;José Bento;;;;;LOGISTICA NACIONAL;300000;11/12/2025;Gabriel Kegel
 05/12/2025;Tier 7;RS-000867;Rota Guiada;Ativo;Lua Gomes;;;;;O.S.K transportes;172843;18/02/2026;Gabriel Kegel
 29/01/2026;Tier 3;RS-000953;Autonomia;Ativo;José Bento;;;;;Rodojunior;4610;12/02/2026;Gabriel Kegel
 12/03/2026;Tier 8;RS-001033;Início;;Gabriel Kegel;;;;;Gigante Representação Comercial;167700;;
-06/03/2026;Tier 7;RS-001020;Piloto;Ativo;José Bento;;;;;Dajex Transportes;362620;10/03/2026;Gabriel Kegel
+06/03/2026;Tier 7;RS-001020;Rota Guiada;Ativo;José Bento;;;;;Dajex Transportes;344598;10/03/2026;Gabriel Kegel
 29/11/2024;Tier 7;RS-000253;Embarque;Churn;José Bento;;;;;RODOMAM TRANSPORTES LTDA;400000;17/01/2026;Gabriel Kegel
 30/04/2025;Tier 7;RS-000511;Início;Churn;José Bento;;;;;LASSALLI E RAMOS TRANSPORTES LTDA;300000;17/01/2026;Gabriel Kegel
 26/08/2025;Tier 6;RS-000697;Embarque;Inativo;Lua Gomes;;;;;Transhow;400000;05/12/2025;Gabriel Kegel
@@ -809,6 +817,7 @@
 28/01/2026;Tier 6;RS-000951;Rota Guiada;Ativo;José Bento;;;;;Santin Equipamentos;317773;19/02/2026;Gabriel Kegel
 03/03/2026;Tier 6;RS-001012;Piloto;Ativo;José Bento;;;;;Magnum Tires;255750;03/03/2026;Gabriel Kegel
 14/10/2024;Tier 6;RS-000093;Piloto;Churn;José Bento;;;;;K-THA TRANSPORTES;214690;17/01/2026;Gabriel Kegel
+11/03/2026;Tier 7;RS-001024;Embarque;Ativo;José Bento;;;;;Pirâmides Distribuidora;75970;12/03/2026;Gabriel Kegel
 30/09/2025;Tier 7;RS-000755;Piloto;Inativo;Lua Gomes;;;;;Logfadel transportes;165700;13/01/2026;Gabriel Kegel
 27/09/2024;Tier 7;RS-000060;Rota Guiada;Churn;Lua Gomes;;;;;Modal Rodoviário BRASIL Transportes;75053;11/11/2025;Gabriel Kegel
 27/09/2024;Tier 8;RS-000059;Rota Guiada;Ativo;Lua Gomes;;;;;G&E Group;5082;18/02/2026;Gabriel Kegel
@@ -834,7 +843,7 @@
 10/11/2025;Tier 4;RS-000817;Piloto;Inativo;José Bento;;;;;Transcodil LTDA;104355;16/02/2026;Gabriel Kegel
 30/11/2024;Tier 5;RS-000260;Autonomia;Churn;José Bento;;;;;2AE AEREO E RODOVIARIO TRANSPORTES;9968;06/11/2025;Gabriel Kegel
 20/02/2026;Tier 2;RS-000995;Embarque;Inativo;José Bento;;;;;Grupo Penta LTDA;300000;23/02/2026;Gabriel Kegel
-27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;;;;Risso Encomendas;50267;04/02/2026;Gabriel Kegel
+27/01/2026;Tier 3;RS-000947;Autonomia;Recorrente;José Bento;;;;;Risso Encomendas;68022;04/02/2026;Gabriel Kegel
 25/09/2024;Tier 7;RS-000037;Piloto;Churn;Lua Gomes;;;;;Modal Sul Transportes;53562;22/10/2025;Gabriel Kegel
 31/10/2025;Tier 5;RS-000803;Piloto;Inativo;Lua Gomes;;;;;PIANETTO TRANSPORTES LOGISTICA;258404;16/02/2026;Gabriel Kegel
 11/11/2025;Tier 5;RS-000822;Embarque;Recorrente;José Bento;;;;;Leofran Transportes LTDA;102758;18/02/2026;Gabriel Kegel
@@ -842,7 +851,7 @@
 08/01/2026;Tier 4;RS-000920;Rota Guiada;Ativo;José Bento;;;;;STE Logística;151940;18/02/2026;Gabriel Kegel
 10/12/2024;Tier 6;RS-000276;Piloto;Inativo;José Bento;;;;;GIRO TRANSPORTES LTDA;0;11/12/2025;Gabriel Kegel
 17/10/2025;Tier 5;RS-000778;Piloto;Inativo;José Bento;;;;;TCA TRANSPORTES;67585;09/01/2026;Gabriel Kegel
-19/02/2026;Tier 7;RS-000991;Autonomia;Ativo;Lua Gomes;;;;;FORTLINE Ind. Móveis LTDA;5340;19/02/2026;Gabriel Kegel
+19/02/2026;Tier 7;RS-000991;Autonomia;Ativo;Lua Gomes;;;;;FORTLINE Ind. Móveis LTDA;25365;19/02/2026;Gabriel Kegel
 27/02/2026;Tier 5;RS-001007;Embarque;Inativo;José Bento;;;;;Ecopower;600000;27/02/2026;Gabriel Kegel
 29/07/2025;Tier 7;RS-000654;Embarque;Inativo;José Bento;;;;;Godi Transportes;337000;07/11/2025;Gabriel Kegel
 19/11/2024;Tier 1;RS-000226;Autonomia;Inativo;Lua Gomes;;;;;Transportadora Print;478550;25/02/2026;Gabriel Kegel
